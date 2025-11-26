@@ -10,9 +10,6 @@ import campus2 from '../image/campus/campus2.jpg';
 import campus3 from '../image/campus/campus3.jpg';
 import campus4 from '../image/campus/campus4.jpg';
 
-
-
-
 import '../cssFile/Ministries.css';
 
 function Ministries() {
