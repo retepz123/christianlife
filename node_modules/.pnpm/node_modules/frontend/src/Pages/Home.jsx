@@ -14,7 +14,6 @@ function Home() {
       
        <section style={{height: "100vh", width: '100%', backgroundColor: "rgba(0, 0, 0, 0.5)",   backgroundBlendMode: "darken", backgroundSize: "cover", backgroundRepeat: "no-repeat",
       inset: 0,
-      backgroundColor: "rgba(0, 0, 0, 0.5)",
         backgroundImage: `url(${life})`,
        }}
       
