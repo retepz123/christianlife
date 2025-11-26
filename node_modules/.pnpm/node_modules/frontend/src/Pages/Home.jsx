@@ -41,6 +41,7 @@ function Home() {
 
     <Ministries />
     <UpcomingEvents />
+    <Footer />
 
 
     </div>

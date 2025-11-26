@@ -1,24 +1,31 @@
 import '../cssFile/Footer.css';
 import fb from '../image/communication.png';
-import youtube from '../image/youtube.png';
-
+import logo from '../image/logo.jpg';
+import IG from '../image/instagram.png';
+import messenger from '../image/messenger.png';
 
 function Footer() {
 
   return (
     <footer>
-      <div className='sub-footer'>
+      <div className='sub-foot'>
         <div>
-        <h2>Christian Life Center Paranaque</h2>
-      </div>
-      <div className='line'></div>
-        <div className='icons'> 
-          <img src={fb} className='icon' />
-          <img src={youtube} className='icon' />
+          <img src={logo} className='logo' alt='CLC' />
         </div>
-      </div>
-      <div className='copyright'>
-        <p>©️ Copyright, All Rights Reserved</p>
+        <div className='line'></div>
+          
+              <div className='address'>
+           <span className='div-address'>Address:</span>
+        <span className='sub-add'>3rd Flr, YP Bldg (Blue Bldg)., Dr. A. Santos Ave., Sucat, Parañaque, Philippines</span>
+        <div className='foot-icon'>
+            <a href=''><img src={fb} alt='fb' className='icons'/></a>
+           <a href='' > <img src={IG} alt='IG' className='icons'/></a>
+           <a href='' > <img src={messenger} alt='IG' className='icons'/></a>
+
+          </div>
+        </div>
+          
+         
       </div>
     </footer>
   );
