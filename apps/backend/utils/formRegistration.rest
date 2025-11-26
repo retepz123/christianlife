@@ -1,0 +1,37 @@
+### registration form
+# @prompt FullName
+# @prompt age
+# @prompt address
+# @prompt contact
+# @prompt gender
+# @prompt whoInvitedYou
+POST http://localhost:3000/api/form
+Content-Type: application/json
+
+{
+  "fullName": "{{FullName}}",
+  "age": "{{age}}",
+  "address": "{{address}}",
+  "contact": "{{contact}}",
+  "gender": "{{gender}}",
+  "whoInvitedYou": "{{whoInvitedYou}}"
+}
+
+### list of members
+GET http://localhost:3000/api/list
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MjUyNjI1MDJhZTMyMTZjMmY5OGY5OCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc2NDA1NzU0MiwiZXhwIjoxNzY0NjYyMzQyfQ.ydf9VYVJPnCVpCfeqGkrkbYeu-R5Wy55gAbK_DBeTWE
+
+
+### prayer request
+# @prompt name
+# @prompt message
+POST http://localhost:3000/api/prayerRequest
+Content-Type: application/json
+
+{
+  "name": "{{name}}",
+  "message": "{{message}}"
+}
+
+###
+GET http://localhost:3000/api/allPrayer

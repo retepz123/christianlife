@@ -1,0 +1,131 @@
+nav{
+  backdrop-filter: blur(5px);
+  width: 100%;
+  height: 70px;
+  box-shadow: 1px 1px gainsboro;
+}
+
+.clc{
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.hero-title{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+
+
+.jesus-container{
+  display: flex;
+  align-items: end;
+  height: 80vh;
+  width: 70%;
+  justify-content: center;
+ 
+}
+
+.jesus {
+  color: white;
+   font-family: 'MyCustomFont';
+   font-size: 80px;
+}
+
+.clc-text {
+  font-size: 40px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.register{
+  text-decoration: none;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.login{
+  text-decoration: none;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.logo {
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+.side-nav{
+   display: flex;
+  justify-content: space-evenly;
+  height: 80px;
+  color: white;
+  padding: 10px;
+}
+
+section{
+  padding-bottom: 10px;
+}
+
+.nav-text{
+  display: flex;
+  width: 300px;
+  height: 30px;
+  padding: 5px;
+  justify-content: space-evenly;
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.main {
+    background-color: #3B3C36;
+}
+
+.event-title{
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 50px;
+}
+
+.picnic{
+  width: 100%;
+  height: 25rem;
+  border-radius: 10px;
+
+
+}
+
+.post-cards{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  row-gap: 20px;
+  height: 500px;
+  padding: 10px;
+}
+
+.post{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  width: 90%;
+  height: 400px;
+}
+.text {
+  width: 500px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+
+.title-text{
+  height: 100px;
+  text-align: center;
+  padding: 10px;
+}

@@ -1,0 +1,21 @@
+###
+# @prompt username
+# @prompt password
+POST http://localhost:3000/api/leader/signup
+Content-Type: application/json
+
+{
+  "username": "{{username}}",
+  "password": "{{password}}"
+}
+
+###
+# @prompt username
+# @prompt password
+POST http://localhost:3000/api/leader/login
+Content-Type: application/json
+
+{
+  "username": "{{username}}",
+  "password": "{{password}}"
+}

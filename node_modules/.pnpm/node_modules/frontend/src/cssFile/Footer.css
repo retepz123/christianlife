@@ -1,0 +1,31 @@
+footer{
+  height: 100px;
+  background: linear-gradient(#ff930f, #fff95b);
+}
+
+.sub-footer {
+  width: 80%;
+  height: 70px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.icons{
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+}
+
+.icon{
+  width: 30px;
+  height: 30px;
+}
+
+.copyright{
+  text-align: center;
+}
+
+.line {
+  height: 50px;
+  width: 2px;
+  border: 1px solid black;
+}
