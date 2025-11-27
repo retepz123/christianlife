@@ -40,7 +40,9 @@ function Home() {
     </section>
 
     <Ministries />
+
     <UpcomingEvents />
+    <PrayerForm />
     <Footer />
 
 

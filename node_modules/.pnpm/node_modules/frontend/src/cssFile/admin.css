@@ -1,0 +1,62 @@
+.admin-main{
+  width: 100%;
+  background-color: #383B23;
+   min-height: 100vh;
+}
+.admin-container{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px;
+}
+
+.member-main{
+   min-height: 100vh;
+}
+.list{
+  list-style: none;
+  width: 250px;
+  height: 150px;
+  background-color: #9ADA29;
+}
+
+.member-list{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 10px;
+}
+.list-list{
+  padding: 10px;
+   display: flex;
+  flex-direction: column;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.all-members{
+  text-align: center;
+  padding: 10px;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 40px;
+}
+.prayer-list{
+  list-style: none;
+  height: 100px;
+  background-color: #9ADA29;
+ 
+}
+.prayer-text{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.every-list{
+   display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  padding: 10px;
+}
+.prayer-main{
+   min-height: 100vh;
+   width: 100%;
+}

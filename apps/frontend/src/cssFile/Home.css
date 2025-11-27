@@ -42,12 +42,32 @@ nav{
   text-decoration: none;
   color: white;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: 100px;
+  text-align: center;
+ 
+}
+.register:hover{
+  background-color: skyblue;
+  width: 100px;
+  text-align: center;
+   height: 30px;
+  
 }
 
 .login{
   text-decoration: none;
   color: white;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: 100px;
+  text-align: center;
+}
+
+.login:hover{
+   background-color: skyblue;
+  width: 100px;
+  text-align: center;
+   height: 30px;
+  
 }
 
 .logo {
@@ -79,7 +99,7 @@ section{
 }
 
 .main {
-    background-color: #3B3C36;
+    background-color: #383B23;
 }
 
 .event-title{

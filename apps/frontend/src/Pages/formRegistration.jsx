@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import {axiosInstance} from '../lib/axios';
 import { useNavigate } from 'react-router-dom';
+import '../cssFile/Registration.css';
 
 
 
@@ -52,18 +53,21 @@ function FormRegistration() {
 
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <input type='text' placeholder='Full Name' name='fullName' onChange={handleChange} value={form.fullName}/>
-        <input type='Number' placeholder='Age' name='age' onChange={handleChange} value={form.age}/>
-        <input type='text' placeholder='Address' name='address' onChange={handleChange} value={form.address}/>
-        <input type='Number' placeholder='Mobile Number' name='contact' onChange={handleChange} value={form.contact}/>
+    <div className='register-main'>
+      <h1 className='title-reg'>Welcome Form</h1>
+      <form className='register-form' onSubmit={handleSubmit}>
+        <input className='input-form' type='text' placeholder='Full Name' name='fullName' onChange={handleChange} value={form.fullName}/>
+        <input className='input-form' type='Number' placeholder='Age' name='age' onChange={handleChange} value={form.age}/>
+        <input className='input-form' type='text' placeholder='Address' name='address' onChange={handleChange} value={form.address}/>
+        <input className='input-form' type='Number' placeholder='Mobile Number' name='contact' onChange={handleChange} value={form.contact}/>
+
         <select name='gender' onChange={handleChange} value={form.gender} >
           <option value='Male'>Male</option>
           <option value='Female'>Female</option>
         </select>
-        <input type='text' placeholder='Who Invited You?' name='whoInvitedYou' onChange={handleChange} value={form.whoInvitedYou} />
-        <button type='submit'>Submit</button>
+
+        <input className='input-form' type='text' placeholder='Who Invited You?' name='whoInvitedYou' onChange={handleChange} value={form.whoInvitedYou} />
+        <button className='submit' type='submit'>Submit</button>
       </form>
     </div>
   );

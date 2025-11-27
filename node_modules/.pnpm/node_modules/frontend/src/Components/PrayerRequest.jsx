@@ -22,18 +22,20 @@ function PrayerRequest() {
         }
       }
       fetchAllPrayers();
-    }, [])
+    }, []) 
 
 
   return (
-    <div>
-      <h1>Prayer Request</h1>
+    <div className='prayer-main'>
+      <h1 className='all-members'>Prayer Request</h1>
       <div>
-        <ul>
+        <ul className='every-list'>
           {prayers.map((p) => (
-          <li key={p._id}>
-            <span>Name: {p.name} </span>
+          <li key={p._id} className='prayer-list'>
+            <div className='prayer-text'>
+              <span>Name: {p.name} </span>
             <span>Message: {p.message}</span>
+            </div>
           </li>
         ))}</ul>
       </div>

@@ -10,7 +10,7 @@ function Footer() {
     <footer>
       <div className='sub-foot'>
         <div>
-          <img src={logo} className='logo' alt='CLC' />
+          <img src={logo} className='footer-logo' alt='CLC' />
         </div>
         <div className='line'></div>
           
@@ -26,6 +26,9 @@ function Footer() {
         </div>
           
          
+      </div>
+      <div className='copyrights'>
+        <span>Copyrights ©️ Christian Life Center Paranaque</span>
       </div>
     </footer>
   );

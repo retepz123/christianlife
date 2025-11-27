@@ -41,14 +41,14 @@ function PrayerForm() {
 
   return (
     <div className='prayer'>
-      <h2>Prayer Request</h2>
+      <h2 className='prayer-title'>Prayer Request</h2>
       <form className='form' onSubmit={sendPrayer}>
         <div>
           <label>Full Name: </label>
-        <input type='text' placeholder='' value={form.name} name='name' onChange={handleChange}/>
+        <input className='name-text' type='text' placeholder='' value={form.name} name='name' onChange={handleChange}/>
         </div>
         <textarea rows="4" cols="50" value={form.message} name='message' onChange={handleChange}>Message here...</textarea>
-        <button type='submit'>Submit</button>
+        <button className='submit' type='submit'>Submit</button>
       </form>
     </div>
   );
