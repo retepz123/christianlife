@@ -4,10 +4,6 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-overrides:
-  react: 18.3.1
-  react-dom: 18.3.1
-
 importers:
 
   .:
@@ -24,6 +20,12 @@ importers:
       dotenv:
         specifier: ^17.2.3
         version: 17.2.3
+      react:
+        specifier: 18.3.1
+        version: 18.3.1
+      react-dom:
+        specifier: 18.3.1
+        version: 18.3.1(react@18.3.1)
       turbo:
         specifier: ^2.6.1
         version: 2.6.1
@@ -57,12 +59,6 @@ importers:
       axios:
         specifier: ^1.13.2
         version: 1.13.2
-      react:
-        specifier: 18.3.1
-        version: 18.3.1
-      react-dom:
-        specifier: 18.3.1
-        version: 18.3.1(react@18.3.1)
       react-router-dom:
         specifier: ^7.9.6
         version: 7.9.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -74,10 +70,10 @@ importers:
         specifier: ^9.39.1
         version: 9.39.1
       '@types/react':
-        specifier: ^18.2.6
+        specifier: ^18.3.27
         version: 18.3.27
       '@types/react-dom':
-        specifier: ^18.2.4
+        specifier: ^18.3.7
         version: 18.3.7(@types/react@18.3.27)
       '@vitejs/plugin-react-swc':
         specifier: ^4.2.2
@@ -1302,21 +1298,21 @@ packages:
   react-dom@18.3.1:
     resolution: {integrity: sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw==}
     peerDependencies:
-      react: 18.3.1
+      react: ^18.3.1
 
   react-router-dom@7.9.6:
     resolution: {integrity: sha512-2MkC2XSXq6HjGcihnx1s0DBWQETI4mlis4Ux7YTLvP67xnGxCvq+BcCQSO81qQHVUTM1V53tl4iVVaY5sReCOA==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
-      react: 18.3.1
-      react-dom: 18.3.1
+      react: '>=18'
+      react-dom: '>=18'
 
   react-router@7.9.6:
     resolution: {integrity: sha512-Y1tUp8clYRXpfPITyuifmSoE2vncSME18uVLgaqyxh9H35JWpIfzHo+9y3Fzh5odk/jxPW29IgLgzcdwxGqyNA==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
-      react: 18.3.1
-      react-dom: 18.3.1
+      react: '>=18'
+      react-dom: '>=18'
     peerDependenciesMeta:
       react-dom:
         optional: true
@@ -1569,7 +1565,7 @@ packages:
     peerDependencies:
       '@types/react': '>=18.0.0'
       immer: '>=9.0.6'
-      react: 18.3.1
+      react: '>=18.0.0'
       use-sync-external-store: '>=1.2.0'
     peerDependenciesMeta:
       '@types/react':
