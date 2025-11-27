@@ -46,7 +46,7 @@ app.use(cors({
   allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
 }));
 
-app.options('*', cors());
+app.options('/*', cors());
 
 app.set('port', PORT);
 app.use(express.json());
