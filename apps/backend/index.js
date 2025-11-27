@@ -27,7 +27,7 @@ async function connectDB(){
 connectDB();
 
 app.use(cors({
-  origin: ['http://localhost:5173', 'https://christianlifeparanaque.onrender.com'],
+  origin: ['http://localhost:5173', 'https://christianlifeparanaque.onrender.com', 'https://christianlife.onrender.com'],
   methods: ['GET', 'POST', 'DELETE'],
   credentials: true,
   allowedHeaders: ['Content-Type', 'Authorization'],
