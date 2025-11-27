@@ -23,6 +23,7 @@
   display: grid;
   grid-template-columns: auto auto auto;
   column-gap: 10px;
+  row-gap: 10px;
 }
 .list-list{
   padding: 10px;
