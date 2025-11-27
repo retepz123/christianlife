@@ -29,10 +29,11 @@ connectDB();
 
 app.use(cors({
   origin: ['http://localhost:5173', 'https://christianlifeparanaque.onrender.com'],
-  methods: ['GET', 'POST', 'DELETE'],
+  methods: ['GET', 'POST', 'DELETE', 'OPTIONS'],
   credentials: true,
   allowedHeaders: ['Content-Type', 'Authorization'],
 }));
+
 
 
 app.set('port', PORT);
