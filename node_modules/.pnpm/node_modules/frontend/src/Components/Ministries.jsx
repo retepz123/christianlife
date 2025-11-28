@@ -15,63 +15,68 @@ import '../cssFile/Ministries.css';
 function Ministries() {
 
   return (
-    <main>
-      <div className='sub-container'>
-          <div className='slide1'>
-         
-               <div className='inner-slide'>
-               <div className='youth-text'>
-                 <span>"Our Youth Ministry empowers the next generation to rise in faith, character, and leadership. We challenge students to pursue a real relationship with Jesus, grow in biblical truth, and influence their world with courage and compassion. Through worship, discipleship, service, and community, we equip young people to become world-changers for Christ."</span>
-               </div>
-          <div className='in-con'>
-             <h2 className='slide-title'>Youth Ministry</h2>
-        <div className='slider'>
-          <img src={youth1} className='slide' />
-           <img src={youth2} className='slide' />
-            <img src={youth3} className='slide' />
-        </div>
+    <main className='slide-main'>
+      <div className='slides-container'>
+        <div className='sub-slides'>
+          <div className='reverse'>
+            <div className='slide-text'>
+            <span>"A place where faith meets fun! Our youth ministry brings students together for worship, teaching, games, and unforgettable moments with God. We help young people build strong friendships, deepen their faith, and live boldly as disciples of Jesus in today’s world."</span>
           </div>
-       </div>
-      </div>
-
-        <div className='slide2'>
-        <div className='inner-slide'>
-         <div>
-            <h2 className='slide-title'>House Churches</h2>
-        <div className='slider'>
-          <img src={house1} className='slide' />
-           <img src={house2} className='slide' />
-            <img src={house3} className='slide' />
-           <img src={house4} className='slide' />
-        </div>
-         </div>
-         <div className='youth-text'>
-          <span>"House Churches are the heartbeat of our ministry—a network of home-based gatherings that equip believers to grow deeper in discipleship, live out the gospel, and impact their neighborhoods. In these smaller communities, we encounter God, develop spiritual maturity, and live on mission together. Every house becomes a place of worship, fellowship, and transformation."</span>
-         </div>
-        </div>
-      </div>
-
-        <div className='slide3'>
-        <div  className='inner-slide' >
-          <div className='youth-text'>
-            <span>
-              "The Campus Ministry is a welcoming community of students who gather to explore faith, build relationships, and find purpose. Through small groups, prayer gatherings, mentoring, and campus outreach, we create a space where students can belong, be encouraged, and be empowered to live out their faith confidently in school."
-            </span>
+          <div >
+            <div className='title-ministry'>
+                <span className='youth-text'>Youth Ministry</span>
+                 <div className='slider'>
+              <img src={youth1} className='slide' />
+               <img src={youth2} className='slide' />
+                <img src={youth3} className='slide' />
+            </div>
+            </div>
+           
           </div>
-           <div>
-             <h2 className='slide-title'>Campus Ministry</h2>
-        <div className='slider'>
-          <img src={campus1} className='slide' />
-           <img src={campus2} className='slide' />
-            <img src={campus3} className='slide' />
-           <img src={campus4} className='slide' />
+          </div>
         </div>
-           </div>
+
+          <div className='sub-slides'>
+          <div className='reverse'> 
+            <div className='slide-text'>
+            <span>"A House Church is a warm, welcoming space where believers gather in smaller, personal settings to worship, study the Word, pray, and support one another. It’s a place for authentic community, deep connections, and spiritual growth—where faith is lived out in everyday life. Here, everyone has the opportunity to participate, share, and grow together as a family of God."</span>
+          </div>
+          <div >
+            <div className='title-ministry'>
+                <span className='youth-text'>House Churches</span>
+                 <div className='slider'>
+              <img src={house1} className='slide' />
+              <img src={house2} className='slide' />
+              <img src={house3} className='slide' />
+            </div>
+            </div>
+           
+          </div>
+          </div>
         </div>
-      </div>
+
+          <div className='sub-slides'>
+            <div className='reverse'>
+               <div className='slide-text'>
+            <span>"Campus Ministry is a vibrant community where students and young adults explore faith, build meaningful relationships, and live out Christ’s teachings on campus. Through worship, Bible studies, mentorship, and service opportunities, students are equipped to grow spiritually, lead with purpose, and impact their schools and communities with God’s love."</span>
+          </div>
+          <div >
+            <div className='title-ministry'>
+                <span className='youth-text'>Campus Ministry</span>
+                 <div className='slider'>
+              <img src={campus1} className='slide' />
+              <img src={campus2} className='slide' />
+              <img src={campus3} className='slide' />
+              <img src={campus4} className='slide' />
+            </div>
+            </div>
+           
+          </div>
+            </div>
+        </div>
       </div>
     </main>
-  );
+  )
 }
 
 export default Ministries;

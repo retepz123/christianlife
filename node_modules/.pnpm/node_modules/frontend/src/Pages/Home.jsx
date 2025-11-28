@@ -12,8 +12,7 @@ function Home() {
   return (
     <div>
       
-       <section style={{height: "100vh", width: '100%', backgroundColor: "rgba(0, 0, 0, 0.5)",   backgroundBlendMode: "darken", backgroundSize: "cover", backgroundRepeat: "no-repeat",
-      inset: 0,
+       <section className='hero-section' style={{
         backgroundImage: `url(${life})`,
        }}
       
@@ -25,7 +24,7 @@ function Home() {
             <h3 className='clc-text'>CLC</h3>
           </div>
        <div className='nav-text'>
-        <span>About</span>
+        <span className='about'>About</span>
         <Link to='/registration' className='register'>Register</Link>
         <Link to='/login' className='login'>Login</Link>
        </div>

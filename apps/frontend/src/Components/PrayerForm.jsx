@@ -43,7 +43,7 @@ function PrayerForm() {
     <div className='prayer'>
       <h2 className='prayer-title'>Prayer Request</h2>
       <form className='form' onSubmit={sendPrayer}>
-        <div>
+        <div className='request-form'>
           <label>Full Name: </label>
         <input className='name-text' type='text' placeholder='' value={form.name} name='name' onChange={handleChange}/>
         </div>

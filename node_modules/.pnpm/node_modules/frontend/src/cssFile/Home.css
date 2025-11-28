@@ -1,6 +1,47 @@
+.hero-section {
+  height: 100vh;
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
+  background-size: cover;
+  background-repeat: no-repeat;
+  inset: 0;
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+  .hero-section {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  }
+  .jesus-container {
+    padding-left: 50px;
+  }
+  .side-nav {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .register {
+    font-size: 15px;
+  }
+  .login{
+    font-size: 15px;
+  }
+  .clc-text{
+    font-size: 30px;
+  }
+  .about{
+    font-size: 18px;
+  }
+  .nav-text{
+    display: flex;
+  }
+}
+
 nav{
   backdrop-filter: blur(5px);
-  width: 100%;
   height: 70px;
   box-shadow: 1px 1px gainsboro;
 }
@@ -15,7 +56,6 @@ nav{
   height: 100vh;
   display: flex;
 }
-
 
 
 .jesus-container{
@@ -42,7 +82,7 @@ nav{
   text-decoration: none;
   color: white;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  width: 100px;
+  width: 80px;
   text-align: center;
  
 }
@@ -58,7 +98,7 @@ nav{
   text-decoration: none;
   color: white;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  width: 100px;
+  width: 80px;
   text-align: center;
 }
 
@@ -82,10 +122,7 @@ nav{
   height: 80px;
   color: white;
   padding: 10px;
-}
-
-section{
-  padding-bottom: 10px;
+  width: auto;
 }
 
 .nav-text{
@@ -98,54 +135,45 @@ section{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
-.main {
+/* .main {
     background-color: #383B23;
+} */
+
+/* upcoming events */
+@media (min-width: 320px) and (max-width: 600px){
+  .post {
+    grid-template-columns: 1fr; /* single column on small screens */
+  }
 }
 
+.picnic {
+    width: 100%;
+  height: auto;
+  object-fit: cover; 
+}
+
+.event-main{
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    background-color: #383B23;
+
+}
+.post {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px; /* both row and column gap */
+}
+.title-text{
+  width: 100%;
+  height: 100px;
+  place-items: center;
+  display: flex;
+  justify-content: center;
+}
 .event-title{
   color: white;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 50px;
-}
-
-.picnic{
-  width: 100%;
-  height: 25rem;
-  border-radius: 10px;
-
-
-}
-
-.post-cards{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  row-gap: 20px;
-  height: 500px;
-  padding: 10px;
-}
-
-.post{
-  display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 20px;
-  width: 90%;
-  height: 400px;
-}
-.text {
-  width: 500px;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 20px;
-}
-
-.title-text{
-  height: 100px;
-  text-align: center;
-  padding: 10px;
 }
