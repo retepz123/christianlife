@@ -24,6 +24,16 @@ function PrayerRequest() {
       fetchAllPrayers();
     }, []) 
 
+    async function handleRemove(id){
+      try {
+        const removePrayer = await axiosInstance.delete(`/removeprayer/${id}`, {withCredentials: true });
+        setPrayers(prayers.filter((p) => p._id !== id));
+
+      } catch (error){
+        console.error('Error', error);
+      }
+    }
+
 
   return (
     <div className='prayer-main'>
@@ -36,6 +46,7 @@ function PrayerRequest() {
               <span>Name: {p.name} </span>
             <span>Message: {p.message}</span>
             </div>
+              <span onClick={() => handleRemove(p._id)} type='submit' className='x-btn'>❌</span>
           </li>
         ))}</ul>
       </div>

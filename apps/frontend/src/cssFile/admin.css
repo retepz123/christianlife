@@ -1,4 +1,9 @@
-
+@media (min-width: 320px) and (max-width: 600px){
+  .admin-container{
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .admin-main{
   width: 100%;
@@ -17,7 +22,7 @@
 .list{
   list-style: none;
   width: 250px;
-  height: 150px;
+  height: auto;
   background-color: #9ADA29;
 }
 
@@ -40,6 +45,10 @@
   color: white;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 40px;
+}
+
+.x-btn {
+  cursor: pointer;
 }
 .prayer-list{
   list-style: none;

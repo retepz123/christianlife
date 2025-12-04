@@ -19,7 +19,12 @@ Content-Type: application/json
 
 ### list of members
 GET http://localhost:3000/api/list
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MjUyNjI1MDJhZTMyMTZjMmY5OGY5OCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc2NDA1NzU0MiwiZXhwIjoxNzY0NjYyMzQyfQ.ydf9VYVJPnCVpCfeqGkrkbYeu-R5Wy55gAbK_DBeTWE
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MjY5M2U2YmM3ZmQ2YzVmNjQzMzAyMSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc2NDg0Mjc4MCwiZXhwIjoxNzY1NDQ3NTgwfQ.EIYYbKwjzLvcceLmbHX1qCPw247-SfR8LNbSLy1daXs
+
+### Remove member
+DELETE http://localhost:3000/api/remove/69298e40f546022b3b593cf1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MjY5M2U2YmM3ZmQ2YzVmNjQzMzAyMSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc2NDg0Mjc4MCwiZXhwIjoxNzY1NDQ3NTgwfQ.EIYYbKwjzLvcceLmbHX1qCPw247-SfR8LNbSLy1daXs
+
 
 
 ### prayer request
@@ -33,5 +38,11 @@ Content-Type: application/json
   "message": "{{message}}"
 }
 
-###
+### all prayer
 GET http://localhost:3000/api/allPrayer
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MjY5M2U2YmM3ZmQ2YzVmNjQzMzAyMSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc2NDg0Mjc4MCwiZXhwIjoxNzY1NDQ3NTgwfQ.EIYYbKwjzLvcceLmbHX1qCPw247-SfR8LNbSLy1daXs
+
+
+###
+DELETE http://localhost:3000/api/removeprayer/69295d72efe34a3e22d81bb0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MjY5M2U2YmM3ZmQ2YzVmNjQzMzAyMSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc2NDg0Mjc4MCwiZXhwIjoxNzY1NDQ3NTgwfQ.EIYYbKwjzLvcceLmbHX1qCPw247-SfR8LNbSLy1daXs

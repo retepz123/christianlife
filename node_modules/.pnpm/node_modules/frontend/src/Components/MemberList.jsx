@@ -23,6 +23,16 @@ function MemberList() {
     fetchMembers();
   }, []);
 
+  async function removeMember(id){
+    try {
+      const removeId = await axiosInstance.delete(`/remove/${id}`, {withCredentials: true });
+      setMembers(members.filter((mem) => mem._id !== id));
+
+    } catch (error){
+       console.error('Error in removing the member', error);
+    }
+  }
+
   return (
     <div className='member-main'>
       <h1 className='all-members'> All Members</h1>
@@ -38,6 +48,9 @@ function MemberList() {
               <span>Mobile #: {m.contact}</span>
               <span>Address: {m.address}</span>
               <span>Who invited you? {m.whoInvitedYou}</span>
+             </div>
+             <div>
+              <span onClick={() => removeMember(m._id)} type='submit' className='x-btn'>❌</span>
              </div>
             </li>
           ))}
